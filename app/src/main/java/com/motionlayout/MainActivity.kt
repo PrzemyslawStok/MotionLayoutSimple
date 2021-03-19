@@ -10,13 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
 
-        /*val binding = ActivityMainBinding.inflate(layoutInflater)
+        val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.textViewSimple.text = "234234234234"*/
+        //binding.textViewSimple.text = "234234234234"
 
-        val binding = CatLayoutBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        /*val binding = CatLayoutBinding.inflate(layoutInflater)
+        setContentView(binding.root)*/
 
     }
 }
