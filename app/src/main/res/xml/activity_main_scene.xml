@@ -7,7 +7,6 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:alpha="0.5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +18,7 @@
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@+id/imageView"
+            android:id="@id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -43,8 +42,17 @@
             />
         <KeyFrameSet>
             <KeyAttribute
+                android:scaleX="2.0"
+                android:scaleY="2.0"
                 app:motionTarget="@id/imageView"
-                />
+                app:framePosition="0"
+                >
+            </KeyAttribute>
+            <KeyPosition
+                app:keyPositionType="parentRelative"
+                app:framePosition="0"
+                >
+            </KeyPosition>
         </KeyFrameSet>
     </Transition>
 </MotionScene>
