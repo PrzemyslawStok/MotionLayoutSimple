@@ -10,7 +10,7 @@
     app:layoutDescription="@xml/activity_main_scene">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/catBody"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:scaleType="fitCenter"
@@ -23,18 +23,20 @@
         app:srcCompat="@drawable/cat_body" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/CatEyeLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/cat_eye_left"
         tools:layout_editor_absoluteX="241dp"
         tools:layout_editor_absoluteY="160dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/CatEyeRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/cat_eye_right"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="160dp" />
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="40dp" />
 </androidx.constraintlayout.motion.widget.MotionLayout>
