@@ -5,42 +5,83 @@
     <ConstraintSet android:id="@+id/start">
         <Constraint
             android:id="@+id/catBody"
-            android:layout_width="164dp"
-            android:layout_height="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.13"
-            app:srcCompat="@drawable/cat_body"
-            app:layout_constraintHorizontal_bias="0.25"
-            app:transitionEasing="cubic(0.42,0.37,0.8,0.8)" />
+            app:layout_constraintVertical_bias="0.061"
+            app:srcCompat="@drawable/cat_body" />
+
         <Constraint
-            app:layout_editor_absoluteY="40dp"
-            android:layout_height="wrap_content"
-            app:layout_editor_absoluteX="173dp"
+            android:id="@+id/CatEyeLeft"
             android:layout_width="wrap_content"
-            android:id="@+id/CatEyeRight" />
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/catBody"
+            app:layout_constraintEnd_toEndOf="@+id/catBody"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="@+id/catBody"
+            app:layout_constraintTop_toTopOf="@+id/catBody"
+            app:layout_constraintVertical_bias="0.251"
+            app:srcCompat="@drawable/cat_eye_left" />
+
         <Constraint
-            app:layout_editor_absoluteY="40dp"
-            android:layout_height="wrap_content"
-            app:layout_editor_absoluteX="209dp"
+            android:id="@+id/CatEyeRight"
             android:layout_width="wrap_content"
-            android:id="@+id/CatEyeLeft" />
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/catBody"
+            app:layout_constraintEnd_toEndOf="@+id/catBody"
+            app:layout_constraintHorizontal_bias="0.734"
+            app:layout_constraintStart_toStartOf="@+id/catBody"
+            app:layout_constraintTop_toTopOf="@+id/catBody"
+            app:layout_constraintVertical_bias="0.251"
+            app:srcCompat="@drawable/cat_eye_right" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@id/catBody"
+            android:id="@+id/catBody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.936"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.971"
-            app:srcCompat="@drawable/cat_body"
-            app:layout_constraintHorizontal_bias="0.919" />
+            app:layout_constraintVertical_bias="0.938"
+            app:srcCompat="@drawable/cat_body" />
+
+        <Constraint
+            android:id="@+id/CatEyeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/catBody"
+            app:layout_constraintEnd_toEndOf="@+id/catBody"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="@+id/catBody"
+            app:layout_constraintTop_toTopOf="@+id/catBody"
+            app:layout_constraintVertical_bias="0.251"
+            app:srcCompat="@drawable/cat_eye_left" />
+
+        <Constraint
+            android:id="@+id/CatEyeRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/catBody"
+            app:layout_constraintEnd_toEndOf="@+id/catBody"
+            app:layout_constraintHorizontal_bias="0.734"
+            app:layout_constraintStart_toStartOf="@+id/catBody"
+            app:layout_constraintTop_toTopOf="@+id/catBody"
+            app:layout_constraintVertical_bias="0.251"
+            app:srcCompat="@drawable/cat_eye_right" />
     </ConstraintSet>
 
     <Transition
@@ -55,8 +96,6 @@
             />
         <KeyFrameSet>
             <KeyAttribute
-                android:scaleX="2.0"
-                android:scaleY="2.0"
                 app:motionTarget="@id/catBody"
                 app:framePosition="0"
                 >
