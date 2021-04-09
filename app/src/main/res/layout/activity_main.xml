@@ -47,4 +47,14 @@
         app:layout_constraintTop_toTopOf="@+id/catBody"
         app:layout_constraintVertical_bias="0.251"
         app:srcCompat="@drawable/cat_eye_right" />
+
+    <Button
+        android:id="@+id/open_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.motion.widget.MotionLayout>
