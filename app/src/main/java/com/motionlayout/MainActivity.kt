@@ -16,8 +16,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.openActivity.setOnClickListener {
-            Toast.makeText(this, "Kliknięto klaiwsz", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "Kliknięto klaiwsz", Toast.LENGTH_SHORT).show()
             val intent0 = Intent(this, Activity1::class.java)
+            startActivity(intent0)
+        }
+
+        binding.openActivity2.setOnClickListener {
+            val intent0 = Intent(this, GuideLineActivity::class.java)
             startActivity(intent0)
         }
         //binding.textViewSimple.text = "234234234234"
