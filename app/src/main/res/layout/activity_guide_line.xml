@@ -17,16 +17,15 @@
         android:id="@+id/editTextTextPersonName11"
         android:layout_width="100dp"
         android:layout_height="43dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2"
-        app:layout_constraintVertical_bias="0.075" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -41,20 +40,19 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName11"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName11"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="52dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="35dp"
+        android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
         android:text="+"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="247dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
