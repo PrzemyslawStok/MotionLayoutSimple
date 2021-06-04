@@ -121,5 +121,6 @@
                 >
             </KeyPosition>
         </KeyFrameSet>
+        <OnClick />
     </Transition>
 </MotionScene>
