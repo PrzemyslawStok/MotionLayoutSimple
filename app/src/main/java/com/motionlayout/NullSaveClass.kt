@@ -41,7 +41,9 @@ class NullSaveClass{
             else
                 name = "Przemysław"
 
-            name = createName()?:"Przemysław"
+            for(i in 1..100) {
+                name = createName() ?: "Przemysław"
+            }
 
         }
 
