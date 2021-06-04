@@ -11,7 +11,5 @@ class Activity1 : AppCompatActivity() {
 
         val binding = Activity1Binding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        NullSaveClass.function0()
     }
 }
