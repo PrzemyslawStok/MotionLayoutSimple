@@ -24,6 +24,9 @@ class GuideLineActivity : AppCompatActivity() {
                 }
             }
 
+            val x: Double = number0?:0.0
+            val y: Double = number1?:0.0
+
             if (number0 != null && number1 != null) {
                 val result = number0 + number1
                 Snackbar.make(binding.root, "${result}", Snackbar.LENGTH_SHORT).show()
