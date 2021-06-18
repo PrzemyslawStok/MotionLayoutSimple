@@ -22,8 +22,9 @@ class GuideLineActivity : AppCompatActivity() {
                 Snackbar.make(binding.root, "${result}", Snackbar.LENGTH_SHORT).show()
             }
 
-
         }
+
+
 
 
     }
