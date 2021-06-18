@@ -36,6 +36,10 @@ class GuideLineActivity : AppCompatActivity() {
                 Snackbar.make(binding.root, "${result}", Snackbar.LENGTH_SHORT).show()
             }*/
 
+            /*binding.editTextNumber1.setSelection(
+                0,binding.editTextNumber1.text.toString().length
+            )*/
+
         }
 
         binding.buttonMinus.setOnClickListener {
@@ -50,14 +54,11 @@ class GuideLineActivity : AppCompatActivity() {
 
         binding.editTextNumber0.onFocusChangeListener =
             View.OnFocusChangeListener { view: View, focus: Boolean ->
-                //Snackbar.make(binding.root, "Chyba działa", Snackbar.LENGTH_SHORT).show()
-                if (focus)
-                    binding.editTextNumber0.setSelection(
-                        0,
-                        binding.editTextNumber0.text.toString().length - 1
-                    )
-                //binding.editTextNumber0.setText("")
+                Snackbar.make(binding.root, "Chyba działa", Snackbar.LENGTH_SHORT).show()
 
+                if(focus) {
+                    binding.editTextNumber0.setText("")
+                }
 
             }
 
