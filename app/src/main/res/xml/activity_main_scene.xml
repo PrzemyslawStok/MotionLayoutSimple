@@ -45,17 +45,17 @@
         <Constraint
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:id="@+id/open_activity2"
+            android:id="@+id/open_activity_2_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/open_activity" />
+            app:layout_constraintStart_toEndOf="@+id/open_activity_button" />
         <Constraint
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:id="@+id/open_activity"
+            android:id="@+id/open_activity_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/open_activity2" />
+            app:layout_constraintEnd_toStartOf="@+id/open_activity_2_button" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
