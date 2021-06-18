@@ -52,6 +52,16 @@ class GuideLineActivity : AppCompatActivity() {
             Snackbar.make(binding.root, "${x - y}", Snackbar.LENGTH_SHORT).show()
         }
 
+        binding.buttonMul.setOnClickListener {
+            val number0: Double? = binding.editTextNumber0.text.toString().toDoubleOrNull()
+            val number1: Double? = binding.editTextNumber1.text.toString().toDoubleOrNull()
+
+            val x: Double = number0 ?: 0.0
+            val y: Double = number1 ?: 0.0
+
+            Snackbar.make(binding.root, "${x * y}", Snackbar.LENGTH_SHORT).show()
+        }
+
         binding.editTextNumber0.onFocusChangeListener =
             View.OnFocusChangeListener { view: View, focus: Boolean ->
                 Snackbar.make(binding.root, "Chyba działa", Snackbar.LENGTH_SHORT).show()
