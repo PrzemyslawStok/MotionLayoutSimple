@@ -94,8 +94,8 @@ class GuideLineActivity : AppCompatActivity() {
             }
 
         binding.buttonFunction.setOnClickListener{
-            val x = 10
-            val y = 10
+            val x = 0.0
+            val y = 0.0
 
             Snackbar.make(binding.root, "${x/y}", Snackbar.LENGTH_SHORT).show()
         }
