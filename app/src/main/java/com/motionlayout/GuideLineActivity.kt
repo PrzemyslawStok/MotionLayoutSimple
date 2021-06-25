@@ -5,6 +5,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.motionlayout.databinding.ActivityGuideLineBinding
+import java.lang.ArithmeticException
 
 class GuideLineActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -94,10 +95,17 @@ class GuideLineActivity : AppCompatActivity() {
             }
 
         binding.buttonFunction.setOnClickListener{
-            val x = 0.0
-            val y = 0.0
+            val x = 10
+            val y = 0
 
-            Snackbar.make(binding.root, "${x/y}", Snackbar.LENGTH_SHORT).show()
+            try {
+                Snackbar.make(binding.root, "${x / y}", Snackbar.LENGTH_SHORT).show()
+            }catch(e: ArithmeticException){
+                e.message?.let { it1 ->
+                    Snackbar.make(binding.root,
+                        it1, Snackbar.LENGTH_SHORT).show()
+                }
+            }
         }
     }
 }
