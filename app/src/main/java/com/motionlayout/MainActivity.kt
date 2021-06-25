@@ -30,5 +30,6 @@ class MainActivity : AppCompatActivity() {
         /*val binding = CatLayoutBinding.inflate(layoutInflater)
         setContentView(binding.root)*/
 
+
     }
 }
