@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GuideLineActivity">
+    >
 
     <Button
         android:id="@+id/buttonMul"
@@ -18,17 +18,6 @@
         app:layout_constraintStart_toEndOf="@+id/buttonMinus" />
 
     <Button
-        android:id="@+id/buttonDiv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Div"
-        android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buttonPow"
-        app:layout_constraintEnd_toStartOf="@+id/buttonPow"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonMul" />
-
-    <Button
         android:id="@+id/buttonPow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,6 +27,17 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/buttonDiv"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber1" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Div"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonPow"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonMul" />
 
     <Button
         android:id="@+id/buttonPlus"
@@ -99,4 +99,17 @@
         app:layout_constraintEnd_toStartOf="@+id/buttonMul"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/buttonPlus" />
+
+    <Button
+        android:id="@+id/buttonFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number Function"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
