@@ -98,6 +98,12 @@ class GuideLineActivity : AppCompatActivity() {
             val x = 10
             val y = 0
 
+            if(y!=0)
+                Snackbar.make(binding.root, "${x / y}", Snackbar.LENGTH_SHORT).show()
+            else
+                Snackbar.make(binding.root,
+                    "dzielenie przez zero", Snackbar.LENGTH_SHORT).show()
+
             try {
                 Snackbar.make(binding.root, "${x / y}", Snackbar.LENGTH_SHORT).show()
             }catch(e: ArithmeticException){
