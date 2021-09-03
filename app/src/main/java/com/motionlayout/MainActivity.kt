@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             val intent0 = Intent(this, GuideLineActivity::class.java)
             startActivity(intent0)
         }
+
+        binding.newButton.setOnClickListener{
+
+        }
         //binding.textViewSimple.text = "234234234234"
 
         /*val binding = CatLayoutBinding.inflate(layoutInflater)
