@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.openActivityButton.setOnClickListener {
-            //Toast.makeText(this, "Kliknięto klaiwsz", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Kliknięto klaiwsz", Toast.LENGTH_SHORT).show()
             val intent0 = Intent(this, Activity1::class.java)
             startActivity(intent0)
         }
